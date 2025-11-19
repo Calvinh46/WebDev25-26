@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- WD Lesson 2.8: 
+     How can we use flexbox to create a web page layout? -->
+
+<!-- Resources 
+     https://www.w3schools.com/css/css_website_layout.asp
+     https://www.w3schools.com/css/css3_flexbox.asp
+-->
+<html>
+  <head>
+    <title>WD Lesson 2.8B Practical</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <!--Challenge 1: Use w3SchoolsMockUp.png image as your guide for structuring the website.  Create the necessary containers.  The
+        file info.txt contains the information to place inside each container BUT also contains information to help you identify the 
+        necessary containers to create.  
+    -->
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div id="banner" class="container column center">
+      <h1>How much Farms does the United States has?</h1>
+      <p>Working, Farming, and Gathering</p>
+    </div>
+
+    <div id="main" class="container">
+
+      <div id="body" class="container column">
+        <img src="https://northwestmeadowscapes.com/cdn/shop/files/IMG_8884_3acf1e5d-7f36-40cd-ad4a-ce52afad53e9_980x700.heic?v=1734160657" width="300px" style="margin:0 auto">
+        <p>Around half of America’s farms make little to no money and produce little to no food, but they’re often lumped in with the country’s largest and most polluting farms — a verbal sleight of hand that is rarely questioned and provides political cover for the biggest polluters to continue business as usual.</p>
+        <a href="https://www.vox.com/future-perfect/460046/usda-census-two-million-farms">Source</a>
+      </div>
+
+      <div id="links" class="container column">
+        <img src="https://www.timberridgefruit.com/uploads/1/2/4/2/124209167/published/orchard-1872997.jpg" width="100px">
+        <img src="https://sienafarms.com/cdn/shop/products/DSC0046011.17.11AM.jpg" width="100px">
+        <img src="https://www.michiganfarmfun.com/media/assets/media/berryflatsfarm.jpg" width="100px">
+      </div>
+    </div>
+
+    <div id="footer" class="container">
+      @Copyright 2025
+    </div>
+
+  </body>
+</html>
