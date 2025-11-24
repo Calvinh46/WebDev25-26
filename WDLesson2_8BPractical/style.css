@@ -6,46 +6,65 @@ html, body{
   margin:0 auto;
 }
 a{
-  text-decoration:none;
-  color:blue;
-}
-
-.container{
-    display:flex;
-  }
-
-.column{
-  flex-direction: column;
-}
-
-.center{
-  align-items: center;
-}
-
-nav a{
-  flex:1;
-  text-align:center;
-  padding:10px;
-  transition:0.5s
-}
-nav a:hover{
-    background-color:blue;
-    color:white;
-    transition:0.5s;
+  text-decoration: none;
+  background-color:green;
 }
 #banner{
-  background-color:blue;
-  color:white;
-  padding:20px;
+  background-color: green;
+  color: white;
+  padding: 20px;
 }
 #body{
+  color: white;
   padding:50px;
 }
 #links{
-  padding:50px;
+  padding: 50px;
 }
 #footer{
-  background-color:blue;
+  background-color: green;
   color:white;
   padding:20px;
+}
+.container{
+  display: flex;
+ }
+.column{
+  flex-direction: column;
+}
+.center{
+  justify-content: center;
+  align-items: center;
+}
+nav a{
+  flex:1;
+  text-align: center;
+  padding: 10px;
+  transition:0.5s;
+}
+nav a:hover{
+  background-color:blue;
+  color:white;
+  transition:0.5s;
+}
+#main{
+  flex-direction: end;
+}
+#example{
+  align-items: center;
+}
+#leftpanel{
+  flex: 150px 0 0;
+  background-color:green;
+  height:500px;
+}
+#centerpanel{
+  flex: 3;
+  background-color: green;
+  height:500px;
+}
+#rightpanel{
+  flex: 1;
+  background-color: green;
+  height:500px;
 }
