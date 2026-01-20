@@ -15,7 +15,7 @@ function recPerimeter(){
       let len=parseInt(document.getElementById("l").value);
       let wid=parseInt(document.getElementById("w").value);
       let op=document.getElementById("output");
-      let A = len + wid;
+      let A = 2 * (len * wid);
       op.innerHTML= "Perimeter = "+ A;
 }
 
@@ -28,16 +28,16 @@ function recPerimeter(){
 let pi = 3.1415926;
 
 function cirArea(){
-      let len=parseFloat(document.getElementById("l").value);
+      let r=parseFloat(document.getElementById("rad").value);
       let op=document.getElementById("output");
-      let A = pi * len;
+      let A = pi * (r **2);
       op.innerHTML="Area = " + A;
 }
 
 function cirPerimeter(){
-      let len=parseInt(document.getElementById("l").value);
+      let r=parseInt(document.getElementById("rad").value);
       let op=document.getElementById("output");
-      let A = pi + len;
+      let A = 2*pi*r;
       op.innerHTML= "Perimeter = " + A;
 }
 
