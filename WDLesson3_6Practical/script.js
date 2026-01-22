@@ -4,7 +4,7 @@ function avg(){
     let g2 = parseInt(document.getElementById("grade2").value);
     let g3 = parseInt(document.getElementById("grade3").value);
     let op = document.getElementById("output");
-    let avg = g1 + g2 + g3/3;
+    let avg = (g1 + g2 + g3) / 3;
     op.innerHTML =`The average of all 3 grades is ${avg}`;
 
 }
@@ -23,9 +23,9 @@ function slope(){
 
 // Challenge 6:  Create the function for the BMI program.  Refer to the resource link in the HTML for assistance.
 function BMI(){
-    let height = parseFloat(document.getElementById("h").value);
-    let weight = parseFloat(document.getElementById("w").value);
+    let height = parseFloat(document.getElementById("ht").value);
+    let weight = parseFloat(document.getElementById("wt").value);
     let op = document.getElementById("output");
-    let bmi = weight/(height*height);
+    let bmi = 703 * weight/(height*height);
     op.innerHTML = `Your BMI is ${bmi}`;
 }
