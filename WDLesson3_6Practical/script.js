@@ -26,6 +26,6 @@ function BMI(){
     let height = parseFloat(document.getElementById("ht").value);
     let weight = parseFloat(document.getElementById("wt").value);
     let op3 = document.getElementById("output3");
-    let bmi = 703 * weight/(height*height);
+    let bmi = 703 * weight / (height ** 2 );
     op3.innerHTML = `Your BMI is ${bmi}`;
 }
