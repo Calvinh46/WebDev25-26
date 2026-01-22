@@ -11,13 +11,13 @@ function avg(){
 
 // Challenge 4:  Create the function for the Slope program.  Refer to the resource link in the HTML for assistance.
 function slope(){
-    let y1 = parseInt(document.getElementById("y1").value);
-    let y2 = parseInt(document.getElementById("y2").value);
     let x1 = parseInt(document.getElementById("x1").value);
+    let y1 = parseInt(document.getElementById("y1").value);
     let x2 = parseInt(document.getElementById("x2").value);
+    let y2 = parseInt(document.getElementById("y2").value);
     let op2 = document.getElementById("output2");
     let m = (y2-y1)/(x2-x1);
-    op2.innerHTML = `The slope of the line between (${x2},${x1}) and (${y2},${y1}) is ${m}`;
+    op2.innerHTML = `The slope of the line between (${x1},${y1}) and (${x2},${y2}) is ${m}`;
 
 }
 
