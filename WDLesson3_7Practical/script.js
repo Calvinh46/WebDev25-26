@@ -4,12 +4,12 @@
       3) Display the results in the appropriate element
 */
 function calcDist(){
-      let x1 =parseFloat(document.getElementById("x1").value)
-      let y1 =parseFloat(document.getElementById("y1").value)
-      let x2 =parseFloat(document.getElementById("x2").value)
-      let y2 =parseFloat(document.getElementById("y2").value)
+      let x1 =parseFloat(document.getElementById("x1").value);
+      let y1 =parseFloat(document.getElementById("y1").value);
+      let x2 =parseFloat(document.getElementById("x2").value);
+      let y2 =parseFloat(document.getElementById("y2").value);
       let d = Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
-      let op = document.getElementById("output")
+      let op = document.getElementById("output");
       op.innerHTML = `dist.between pts (${x1},${y1}) and (${x2},${y2}) is ${d}`;
 }
 
@@ -19,12 +19,12 @@ function calcDist(){
       3) Display the results in the appropriate element
 */
 function calcComp(){
-      let P =parseFloat(document.getElementById("P").value)
+      let P =parseFloat(document.getElementById("P").value);
       let r =parseFloat(document.getElementById("r").value)/100
-      let n =parseFloat(document.getElementById("n").value)
-      let t =parseFloat(document.getElementById("t").value)
+      let n =parseFloat(document.getElementById("n").value);
+      let t =parseFloat(document.getElementById("t").value);
       let A = P * Math.pow((1 + r / n), n * t);
-      let op = document.getElementById("output")
+      let op = document.getElementById("output");
       op.innerHTML = `the Amount after ${t} years is ${A}`;
 }
 
