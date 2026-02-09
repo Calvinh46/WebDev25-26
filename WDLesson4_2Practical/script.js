@@ -15,7 +15,7 @@ function name(){
 function calcArea(){
   let l = parseFloat(document.getElementById("l").value);
   let w = parseFloat(document.getElementById("w").value);
-  let op = document.getElementById("output");
+  let output1 = document.getElementById("output");
   let A = l * w
   let message = " "
 
@@ -25,7 +25,7 @@ function calcArea(){
       message = `The area within the length ${l} and width ${w} is: ${A} sq.units.`;
   }
 
-  op.innerHTML = `${message}`;
+  output1.innerHTML = `${message}`;
 }
 
 
@@ -34,9 +34,9 @@ function calcArea(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
-  let a = document.getElementById("animal");
-  let e = document.getElementById("emotion");
-  let output = document.getElementById("output");
+  let a = document.getElementById("animal").value;
+  let e = document.getElementById("emotion").value;
+  let output2 = document.getElementById("output");
   let filename = ""
   if (a == "Bear" && e == "Funny"){
     filename = "funnyBear.jpg";
@@ -57,5 +57,5 @@ function pet(){
     filename = "sadDog.jpg";
   }
 
-  output.innerHTML = `<img src="${filename}">`;
+  output2.innerHTML = `<img src="${filename}">`;
 }
