@@ -16,8 +16,8 @@ function calcFormula(){
     let output = document.getElementById("output");
     let P = parseFloat(document.getElementById("P").value);
     let r = parseFloat(document.getElementById("r").value);
-    let n = parseFloat(document.getElementById("n").value);
-    let years = parseFloat(document.getElementById("t").value);
+    let n = parseInt(document.getElementById("n").value);
+    let years = parseInt(document.getElementById("t").value);
     let build = `<h3>Yearly Balances:</h3>`;
     
    
