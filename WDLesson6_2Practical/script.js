@@ -20,7 +20,7 @@ function artist(){
   //Challenge 2: Fill the JSON below with the specified information for your favorite artist
   let artist = {
     "name":"Bad Bunny",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1Is12nqfQESLkC8eHesrar1Jy5AUaMFiRQ&s",
+    "image":"https://media.pitchfork.com/photos/682b43f9d6a2575d172e91a4/2:3/w_2000,h_3000,c_limit/Bad-Bunny-Debi-Tirar-Mas-Fotos.jpeg",
     "album":"DeBÍ TiRAR MáS FOToS",
     "url":"https://depuertoricopalmundo.com/"
   };
