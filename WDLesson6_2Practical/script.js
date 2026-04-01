@@ -10,19 +10,19 @@ function BHS(){
   let build = ``;
 
   build += `<div class ="card">
-                <h3>${school.name}</h3>
+                <h2>${school.name}</h2>
                 <img src ="${school.image}">
-                <a href ="${school.address}">Website</a>
+                <p>${school.address}</p>
             </div>`;
   output.innerHTML =build;
 }
 function artist(){
   //Challenge 2: Fill the JSON below with the specified information for your favorite artist
   let artist = {
-    "name":"Leonardo da Vinci",
-    "image":"https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg?w=300",
-    "album":"Sound of a Masterpiece",
-    "url":"https://www.britannica.com/topic/Mona-Lisa-painting"
+    "name":"Bad Bunny",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1Is12nqfQESLkC8eHesrar1Jy5AUaMFiRQ&s",
+    "album":"DeBÍ TiRAR MáS FOToS",
+    "url":"https://depuertoricopalmundo.com/"
   };
   let output = document.getElementById("output");
 
@@ -30,10 +30,9 @@ function artist(){
   let build = ``;
 
   build += `<div class="card">
-                <h3>${artist.name}</h3>
-                <img src ="${artist.image}">
-                <h4>${artist.album}</h4>
-                <a href ="${artist.url}">website</a>
+                <h2>${artist.name}</h2>
+                <p>${artist.album}</p>
+                <a target="_blank" href ="${artist.url}"><img src ="${artist.image}"></a>
             </div>`;
   
   output.innerHTML = build;
