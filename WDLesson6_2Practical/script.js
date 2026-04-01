@@ -32,7 +32,9 @@ function artist(){
   build += `<div class="card">
                 <h2>${artist.name}</h2>
                 <p>${artist.album}</p>
-                <a target="_blank" href ="${artist.url}"><img src ="${artist.image}"></a>
+                <a href ="${artist.url}" target="_blank" >
+                  <img src ="${artist.image}"> 
+                </a>
             </div>`;
   
   output.innerHTML = build;
