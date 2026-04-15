@@ -51,7 +51,7 @@ function showMeats(){
     let item = meats[i];
     build += `<div class="card">
                 <h3>${item.title}</h3>
-                <img src = "${item.image}">
+                <img src = "images/${item.image}">
                 <p>$${item.price}</p>
               </div>`;
   }
@@ -74,7 +74,7 @@ function showSeafood(){
     let item2 = seafood[i];
     build += `<div class="card">
                 <h3>${item2.title}</h3>
-                <img src = "${item2.image}">
+                <img src = "images/${item2.image}">
                 <p>$${item2.price}</p>
               </div>`;
   }
@@ -98,7 +98,7 @@ function showDesserts(){
     let item3 = desserts[i];
     build += `<div class="card">
                 <h3>${item3.title}</h3>
-                <img src = "${item3.image}">
+                <img src = "images/${item3.image}">
                 <p>$${item3.price}</p>
               </div>`;
   }
