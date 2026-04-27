@@ -88,7 +88,7 @@ function filterByZipcode(){
 // Challenge 4: Create an event handler (function) to filter the 311 Service Request by complaint type.
 function filterByComplaint(){
   let output = document.getElementById("output");
-  let descriptor = document.getElementById("complaint").value;
+  let complaint_type = document.getElementById("complaint").value;
   let result = document.getElementById("result");
   
   let build = "";
@@ -96,7 +96,7 @@ function filterByComplaint(){
 
   for(let i = 0; i < data.length; i+=1){
     let complaint = data[i];
-    if(complaint.descriptor == descriptor){
+    if(complaint.complaint_type == complaint_type){
       build += `<div class="fitted card">
                     <h3>${complaint.complaint_type}</h3>
                     <hr>
