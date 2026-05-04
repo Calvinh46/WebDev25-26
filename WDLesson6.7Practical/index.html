@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>WD_6.7 Practical</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="fillDropDown.js"></script>
     <script src="script.js"></script>
    </head>
 
@@ -29,17 +30,11 @@
   <div class="container">
       <div id="leftPanel">
         <div class="card">
-          <h3>SEARCH By Street name</h3>
-          <input type="text" id="street_name" placeholder="Enter StreetName(ALL CAPS)">
+          <h3>Zipcode and Borough</h3>
+          <input type="text" id="zipcode" placeholder="Enter Zipcode">
+          <select id="borough"></select>
           <hr></hr>
-          <a class="button" onclick="filterByStreetname()"> Search </a>
-        </div>
-
-        <div class="card">
-          <h3>SEARCH By Borough</h3>
-          <input type="text" id="borough" placeholder="Enter Borough (all CAPS)">
-          <hr></hr>
-          <a class="button" onclick="filterByBorough()"> Search </a>
+          <a class="button" onclick="filterByZipcodeandBorough()"> Search </a>
         </div>
 
         <div class="card">
