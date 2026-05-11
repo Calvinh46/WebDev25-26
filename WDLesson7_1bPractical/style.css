@@ -1,0 +1,94 @@
+html,body{
+  margin:0 auto;
+  font-family:Arial;
+}
+.container{
+  display:flex;
+  padding:10px;
+}
+.center{
+  justify-content:center;
+  align-items:center;
+}
+
+nav{
+  background-color:rgb(237, 116, 100);
+}
+nav a{
+  color:black;
+  padding:10px;
+  flex:1;
+  text-decoration:none;
+  text-align:center;
+}
+nav a:hover{
+  color:rgb(255, 255, 255);
+}
+.subbanner{
+  background-color:rgb(110, 66, 61);
+}
+#banner{
+  background-color:rgb(173, 69, 57);
+  color:rgb(255, 255, 255);
+}
+#footer{
+  background-color:rgb(180, 84, 81);
+  color:white;
+  /*position:fixed;*/
+  left: 0;
+  right: 0;
+  bottom:0px;
+}
+ 
+.card{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid rgb(69, 16, 131);
+  text-align:center;
+}
+
+.highlight{
+  font-style:italic;
+  color:rgb(156, 11, 185);
+}
+.heading{
+  font-weight:bold;
+}
+.button{
+  text-decoration:none;
+  background-color:rgb(195, 63, 63);
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px black;
+}
+.button:hover{
+  background-color:rgb(82, 17, 128);
+}
+#output{
+  display:flex;
+  flex-wrap:wrap;
+}
+.fit{
+  width:150px;
+  height:150px;
+  object-fit:contain;
+}
+
+#leftPanel{
+  flex:1;
+}
+#rightPanel{
+  flex:2;
+}
+.fitted{
+  max-width:200px;
+  min-width:200px;
+}
+#result{
+  background-color: yellow;
+  color:red;
+  max-width: 200px;
+  font-size: 20px;
+}
